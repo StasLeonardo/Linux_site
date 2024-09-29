@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Світ GNU/Linux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GNU/Linux</h1>
+        <img src="linux-logo.png" alt="Логотип Linux" class="linux-logo">
+        <nav>
+            <ul>
+                <li><a href="#">Домашня сторінка</a></li>
+                <li><a href="#">Дистрибутиви</a></li>
+                <li><a href="#">Команди CLI</a></li>
+                <li><a href="#">BASH-скрипт</a></li>
+                <li><a href="#">Джерела інформації</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Секція про GNU/Linux -->
+        <section class="linux-info">
+            <h2>Коротка інформація про GNU/Linux</h2>
+            <p>GNU/Linux — це вільна і відкрита операційна система, яка поєднує ядро Linux з інструментами GNU. Вона широко використовується для серверів, настільних комп'ютерів, мобільних пристроїв та інших систем. Відмінна риса Linux — його надійність, гнучкість і підтримка спільнотою. Користувачі можуть вибирати з безлічі дистрибутивів, кожен з яких орієнтований на різні потреби.</p>
+        </section>
+
+        <!-- Секція популярних дистрибутивів -->
+        <section class="linux-distros">
+            <h2>Найбільш популярні дистрибутиви GNU/Linux</h2>
+            <ul>
+                <li><strong>Ubuntu</strong>: Дружній до новачків дистрибутив, ідеальний для персональних комп'ютерів.</li>
+                <li><strong>Debian</strong>: Стабільний і надійний, використовується на серверах і робочих станціях.</li>
+                <li><strong>Fedora</strong>: Орієнтований на нові технології та розробників.</li>
+                <li><strong>Arch Linux</strong>: Для просунутих користувачів, зосереджений на гнучкості та налаштуванні.</li>
+                <li><strong>CentOS</strong>: Для серверів, відома своєю стабільністю.</li>
+            </ul>
+        </section>
+
+        <!-- Секція команд CLI -->
+        <section class="linux-commands">
+            <h2>Приклади команд роботи в Linux CLI</h2>
+            <ol>
+                <li><code>pwd</code> — Відображає поточну директорію.</li>
+                <li><code>echo</code> — Виводить текст або значення змінної.</li>
+                <li><code>ls</code> — Виводить список файлів у поточній директорії.</li>
+                <li><code>cd</code> — Змінює поточну директорію.</li>
+                <li><code>touch</code> — Створює новий порожній файл.</li>
+                <li><code>mkdir</code> — Створює нову директорію.</li>
+                <li><code>cp</code> — Копіює файли або директорії.</li>
+                <li><code>mv</code> — Переміщує або перейменовує файли/папки.</li>
+                <li><code>rm</code> — Видаляє файли або директорії.</li>
+                <li><code>history</code> — Відображає історію виконаних команд.</li>
+            </ol>
+        </section>
+
+        <!-- Секція BASH-скрипту -->
+        <section class="bash-script">
+            <h2>BASH-скрипт для імітації авторизації</h2>
+            <pre><code>
+#!/bin/bash
+
+echo "Введіть ім'я користувача:"
+read username
+
+echo "Введіть пароль:"
+read -s password
+
+if [[ $username == "admin" && $password == "password123" ]]; then
+    echo "Авторизація успішна!"
+else
+    echo "Невірне ім'я користувача або пароль!"
+fi
+            </code></pre>
+        </section>
+
+        <!-- Секція джерел інформації -->
+        <section class="linux-sources">
+            <h2>Джерела інформації по темі</h2>
+            <ul>
+                <li><a href="https://www.kernel.org/">Офіційний сайт ядра Linux</a></li>
+                <li><a href="https://www.gnu.org/">Офіційний сайт проекту GNU</a></li>
+                <li><a href="https://linuxjourney.com/">Навчальний ресурс про Linux</a></li>
+                <li><a href="https://ubuntu.com/">Офіційний сайт Ubuntu</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Світ GNU/Linux. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
